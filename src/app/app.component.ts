@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MiniCalculadoraApp';
+  title = 'Calculadora';
+  num1:number = 0;
+  num2:number = 0;
+  result:number = 0;
+
+  sumar():void{
+    this.result=this.num1+this.num2;
+  }
+  restar():void{
+    this.result=this.num1-this.num2;
+  }
+  multiplicar():void{
+    this.result=this.num1*this.num2;
+  }
 }
